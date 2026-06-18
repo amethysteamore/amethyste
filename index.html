@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethyste Amore | Premium Dainty Jewelry</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for the Cutesy/Premium Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --lavender-dark: #4A3E56;
+            --lavender-mid: #9D84B7;
+            --lavender-light: #F3EFFF;
+            --blush-pink: #FFF0F5;
+            --text-dark: #2D2533;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAFAFA;
+            color: var(--text-dark);
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .announcement-bar {
+            background-color: var(--lavender-dark);
+            color: #ffffff;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .navbar-brand {
+            color: var(--lavender-dark) !important;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Carousel Image Adjustments */
+        .hero-carousel .carousel-item {
+            height: 500px;
+            background-color: var(--blush-pink);
+        }
+
+        .carousel-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        .carousel-caption-custom {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 16px;
+            backdrop-filter: blur(8px);
+            color: var(--text-dark);
+            max-width: 420px;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            z-index: 10;
+            box-shadow: 0 8px 32px rgba(74, 62, 86, 0.05);
+        }
+
+        /* Product Cards */
+        .product-card {
+            border: none;
+            border-radius: 16px;
+            background-color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(74, 62, 86, 0.08);
+        }
+
+        .product-img-wrapper {
+            height: 340px;
+            overflow: hidden;
+            border-radius: 12px;
+            background-color: #FDFBFD;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.03);
+        }
+
+        .badge-launch {
+            background-color: var(--lavender-mid);
+            color: white;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .btn-premium {
+            background-color: var(--lavender-dark);
+            color: white;
+            border-radius: 30px;
+            padding: 10px 24px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-premium:hover {
+            background-color: var(--lavender-mid);
+            color: white;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #A098A6;
+            font-size: 0.95rem;
+            margin-right: 8px;
+        }
+
+        .actual-price {
+            color: var(--lavender-dark);
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-carousel .carousel-item { height: 400px; }
+            .carousel-caption-custom {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Announcement Bar -->
+<div class="announcement-bar text-center py-2">
+    ✨ INTRODUCTORY LAUNCH OFFER: PREMIUM JEWELRY FROM ₹99 + FREE SHIPPING ALL OVER INDIA ✨
+</div>
+
+    <!-- 2. Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">AMETHYSTE AMORE</a>
+        </div>
+    </nav>
+
+    <!-- 3. Scrolling Image Section (Carousel) -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1: Couple Ring Set -->
+            <div class="carousel-item active">
+                <img src="carousel-couple-rings.png" class="carousel-img" alt="Premium Minimalist Couple Ring Set">
+                <div class="carousel-caption-custom text-start">
+                    <span class="badge badge-launch mb-2">Most Loved</span>
+                    <h2 class="fs-3">Eternal Promise Couple Rings</h2>
+                    <p class="text-muted small">Adjustable, sleek, minimalist matching bands crafted for everyday wear.</p>
+                    <div class="mb-3"><span class="original-price">Mkt Value: ₹499</span> <span class="actual-price">Launch Price: ₹99</span></div>
+                    <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20clicked%20the%20launch%20deal%20for%20the%20Eternal%20Promise%20Couple%20Rings%20for%20%E2%82%B999.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium btn-sm">Claim Launch Deal</a>
+                </div>
+            </div>
+            <!-- Slide 2: Couple Half Heart Pendant Set -->
+            <div class="carousel-item">
+                <img src="carousel-heart-pendant.png" class="carousel-img" alt="Two Halves One Heart Pendant Set">
+                <div class="carousel-caption-custom text-start">
+                    <span class="badge badge-launch mb-2">Trending</span>
+                    <h2 class="fs-3">Two Halves, One Heart Pendant Set</h2>
+                    <p class="text-muted small">Magnetic interlocking half-heart necklaces with premium anti-tarnish plating.</p>
+                    <div class="mb-3"><span class="original-price">Mkt Value: ₹349</span> <span class="actual-price">Launch Price: ₹99</span></div>
+                    <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20clicked%20the%20launch%20deal%20for%20the%20Two%20Halves%2C%20One%20Heart%20Pendant%20Set%20for%20%E2%82%B999.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium btn-sm">Claim Launch Deal</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Value Badges Section -->
+   <div class="container my-4 text-center">
+       <div class="row g-3 justify-content-center">
+           <div class="col-6 col-md-3">
+               <div class="p-2 border rounded-pill bg-white text-muted small fw-semibold">📦 Free Express Shipping</div>
+           </div>
+           <div class="col-6 col-md-3">
+               <div class="p-2 border rounded-pill bg-white text-muted small fw-semibold">🔒 Secure Pre-Paid Delivery</div>
+           </div>
+       </div>
+   </div>
+
+    <!-- 4. Curated Launch Grid (2 Columns, 2 Rows) -->
+    <div id="shop" class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="fs-1">The Introductory Vault Collection</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">We bypass high retail markups to bring you signature quality directly from production. Pay safely upfront with no hidden fees.</p>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-2">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card product-card h-100 p-3 shadow-sm">
+                    <div class="product-img-wrapper">
+                        <img src="product-earrings.png" class="product-img" alt="Baroque Pearl Drop Earrings">
+                    </div>
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div class="mt-2">
+                            <h3 class="h5 mb-1">Baroque Pearl Drop Earrings</h3>
+                            <p class="text-muted small">Hypoallergenic, premium high-lustre finish for timeless grace.</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <div>
+                                <span class="original-price">Retail: ₹799</span>
+                                <span class="actual-price">₹199</span>
+                            </div>
+                            <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20want%20to%20reserve%20the%20Baroque%20Pearl%20Drop%20Earrings%20for%20%E2%82%B9199.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium">Reserve Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card product-card h-100 p-3 shadow-sm">
+                    <div class="product-img-wrapper">
+                        <img src="product-bracelet.png" class="product-img" alt="Minimalist Clover Bracelet">
+                    </div>
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div class="mt-2">
+                            <h3 class="h5 mb-1">Dainty Four-Leaf Clover Bracelet</h3>
+                            <p class="text-muted small">Elegant luck piece featuring a beautiful, minimalist double-sided charm.</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <div>
+                                <span class="original-price">Retail: ₹349</span>
+                                <span class="actual-price">₹99</span>
+                            </div>
+                            <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20want%20to%20reserve%20the%20Dainty%20Four-Leaf%20Clover%20Bracelet%20for%20%E2%82%B999.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium">Reserve Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card product-card h-100 p-3 shadow-sm">
+                    <div class="product-img-wrapper">
+                        <img src="product-ring.png" class="product-img" alt="Minimalist Celestial Ring Set">
+                    </div>
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div class="mt-2">
+                            <h3 class="h5 mb-1">Celestial Starburst Ring Set</h3>
+                            <p class="text-muted small">Adjustable stacking rings with subtle crystal detailing.</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <div>
+                                <span class="original-price">Retail: ₹249</span>
+                                <span class="actual-price">₹99</span>
+                            </div>
+                            <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20want%20to%20reserve%20the%20Celestial%20Starburst%20Ring%20Set%20for%20%E2%82%B999.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium">Reserve Order</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card product-card h-100 p-3 shadow-sm">
+                    <div class="product-img-wrapper">
+                        <img src="product-anklet.png" class="product-img" alt="Aesthetic Butterfly Anklet">
+                    </div>
+                    <div class="card-body p-2 d-flex flex-column justify-content-between">
+                        <div class="mt-2">
+                            <h3 class="h5 mb-1">Aesthetic Shimmer Butterfly Anklet</h3>
+                            <p class="text-muted small">Lightweight, delicate daily accessory with a sweet, cutesy vibe.</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <div>
+                                <span class="original-price">Retail: ₹299</span>
+                                <span class="actual-price">₹199</span>
+                            </div>
+                            <a href="https://wa.me/919363567347?text=Hi%20Amethyste%20Amore!%20I%20want%20to%20reserve%20the%20Aesthetic%20Shimmer%20Butterfly%20Anklet%20for%20%E2%82%B9199.%20Please%20share%20payment%20details." target="_blank" class="btn btn-premium">Reserve Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Micro Trust Footer -->
+    <footer class="bg-white border-top py-4 text-center text-muted small">
+        <div class="container">
+            <p class="mb-1">© 2026 Amethyste Amore. Crafted with love.</p>
+            <p class="mb-0" style="font-size: 0.75rem;">Secure Upfront Deliveries • Verified Tracked Shipping • Curated Quality</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
